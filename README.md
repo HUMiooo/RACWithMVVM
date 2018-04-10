@@ -1,1 +1,3 @@
 # RACWithMVVM
+一个个人RAC的学习记录以及MVVM模式的使用
+RAC库通过Carthage安装依赖
