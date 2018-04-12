@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "HUMTool.h"
+#import <ReactiveObjC/RACSignal.h>
+#import <ReactiveObjC/RACSubject.h>
+#import <ReactiveObjC/RACReplaySubject.h>
+#import <ReactiveObjC/RACDisposable.h>
 @interface RootViewController : UIViewController
 
 @end

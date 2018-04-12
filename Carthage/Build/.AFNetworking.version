@@ -1,0 +1,9 @@
+{
+  "commitish" : "3.2.0",
+  "iOS" : [
+    {
+      "name" : "AFNetworking",
+      "hash" : "1e00b380903ab01c5f0376b85a27900435c9896ee3af396d29a746058dca3771"
+    }
+  ]
+}

@@ -7,10 +7,8 @@
 //
 
 #import "RACBaseTestViewController.h"
-#import <ReactiveObjC/RACSignal.h>
-#import <ReactiveObjC/RACSubject.h>
-#import <ReactiveObjC/RACReplaySubject.h>
-#import <ReactiveObjC/RACDisposable.h>
+
+#import "RACSubjectToDelegateViewController.h"
 @interface RACBaseTestViewController ()
 
 @end
@@ -19,9 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[self useRACSignal];
-    //[self useRACSubject];
-    [self useRACReplaySubject];
+//    [self useRACSignal];
+//    [self useRACSubject];
+//    [self useRACReplaySubject];
+    [self useRACSubjectToDelegate];
 }
 /**
  RACSignal使用步骤：
@@ -108,6 +107,27 @@
     [resubject subscribeNext:^(id  _Nullable x) {
         NSLog(@"第二个订阅者接收到的数据%@",x);
     }];
+}
+
+- (void)useRACSubjectToDelegate {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn setTitle:@"点击跳转" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [btn setFrame:CGRectMake(100, 100, 100, 60)];
+    [self.view addSubview:btn];
+}
+//步骤三：在第一个控制器中，监听跳转按钮，给第二个控制器的代理信号赋值，并且监听.
+- (void)btnClick {
+    // 创建第二个控制器
+    RACSubjectToDelegateViewController *twoVC = [[RACSubjectToDelegateViewController alloc] init];
+    // 设置代理信号
+    twoVC.delegateSignal = [RACSubject subject];
+    // 订阅代理信号
+    [twoVC.delegateSignal subscribeNext:^(id x) {
+        NSLog(@"点击了通知按钮");
+    }];
+    // 跳转到第二个控制器
+    [self presentViewController:twoVC animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

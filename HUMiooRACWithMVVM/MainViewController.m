@@ -19,14 +19,14 @@
 
 - (NSMutableArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = [NSMutableArray arrayWithObjects:@"RACBaseTest", @"NULL", nil];
+        _dataArray = [NSMutableArray arrayWithObjects:@"RACBaseTest", @"NetTest", nil];
     }
     return _dataArray;
 }
 
 - (NSMutableArray *)dataTitleArray {
     if (!_dataTitleArray) {
-        _dataTitleArray = [NSMutableArray arrayWithObjects:@"First-RACBaseTest", @"NULL-NULL", nil];
+        _dataTitleArray = [NSMutableArray arrayWithObjects:@"First-RACBaseTest", @"NetTest-NetTest", nil];
     }
     return _dataTitleArray;
 }

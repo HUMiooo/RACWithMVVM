@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D51D471207F3A0100D3C28B /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D51D470207F3A0100D3C28B /* AFNetworking.framework */; };
+		4D51D472207F3A0100D3C28B /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D51D470207F3A0100D3C28B /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D51D475207F3A3500D3C28B /* NetTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51D474207F3A3500D3C28B /* NetTestViewController.m */; };
 		4DAA11D2207C842C0087B0B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA11D1207C842C0087B0B6 /* AppDelegate.m */; };
 		4DAA11D8207C842C0087B0B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DAA11D6207C842C0087B0B6 /* Main.storyboard */; };
 		4DAA11DA207C842D0087B0B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DAA11D9207C842D0087B0B6 /* Assets.xcassets */; };
@@ -20,6 +23,7 @@
 		4DAA120C207C860F0087B0B6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA120B207C860F0087B0B6 /* MainViewController.m */; };
 		4DAA120F207C865F0087B0B6 /* RACBaseTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA120E207C865F0087B0B6 /* RACBaseTestViewController.m */; };
 		4DAA1213207C86970087B0B6 /* HUMTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA1211207C86970087B0B6 /* HUMTool.m */; };
+		4DAA1219207C8FDD0087B0B6 /* RACSubjectToDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA1218207C8FDD0087B0B6 /* RACSubjectToDelegateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4DAA1204207C858B0087B0B6 /* ReactiveObjC.framework in Embed Frameworks */,
+				4D51D472207F3A0100D3C28B /* AFNetworking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +59,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D51D470207F3A0100D3C28B /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		4D51D473207F3A3500D3C28B /* NetTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetTestViewController.h; sourceTree = "<group>"; };
+		4D51D474207F3A3500D3C28B /* NetTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetTestViewController.m; sourceTree = "<group>"; };
 		4DAA11CD207C842C0087B0B6 /* HUMiooRACWithMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HUMiooRACWithMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAA11D0207C842C0087B0B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DAA11D1207C842C0087B0B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +85,8 @@
 		4DAA120E207C865F0087B0B6 /* RACBaseTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACBaseTestViewController.m; sourceTree = "<group>"; };
 		4DAA1211207C86970087B0B6 /* HUMTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUMTool.m; sourceTree = "<group>"; };
 		4DAA1212207C86970087B0B6 /* HUMTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUMTool.h; sourceTree = "<group>"; };
+		4DAA1217207C8FDD0087B0B6 /* RACSubjectToDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACSubjectToDelegateViewController.h; sourceTree = "<group>"; };
+		4DAA1218207C8FDD0087B0B6 /* RACSubjectToDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACSubjectToDelegateViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DAA1203207C858B0087B0B6 /* ReactiveObjC.framework in Frameworks */,
+				4D51D471207F3A0100D3C28B /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +119,7 @@
 		4DAA11C4207C842C0087B0B6 = {
 			isa = PBXGroup;
 			children = (
+				4D51D470207F3A0100D3C28B /* AFNetworking.framework */,
 				4DAA1202207C858B0087B0B6 /* ReactiveObjC.framework */,
 				4DAA11CF207C842C0087B0B6 /* HUMiooRACWithMVVM */,
 				4DAA11E8207C842D0087B0B6 /* HUMiooRACWithMVVMTests */,
@@ -137,6 +149,10 @@
 				4DAA120B207C860F0087B0B6 /* MainViewController.m */,
 				4DAA120D207C865F0087B0B6 /* RACBaseTestViewController.h */,
 				4DAA120E207C865F0087B0B6 /* RACBaseTestViewController.m */,
+				4DAA1217207C8FDD0087B0B6 /* RACSubjectToDelegateViewController.h */,
+				4DAA1218207C8FDD0087B0B6 /* RACSubjectToDelegateViewController.m */,
+				4D51D473207F3A3500D3C28B /* NetTestViewController.h */,
+				4D51D474207F3A3500D3C28B /* NetTestViewController.m */,
 				4DAA1210207C86970087B0B6 /* HUMTool */,
 				4DAA11D6207C842C0087B0B6 /* Main.storyboard */,
 				4DAA11D9207C842D0087B0B6 /* Assets.xcassets */,
@@ -185,7 +201,7 @@
 				4DAA11CA207C842C0087B0B6 /* Frameworks */,
 				4DAA11CB207C842C0087B0B6 /* Resources */,
 				4DAA1205207C858B0087B0B6 /* Embed Frameworks */,
-				4DAA1206207C85930087B0B6 /* ShellScript */,
+				4DAA1206207C85930087B0B6 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -302,14 +318,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4DAA1206207C85930087B0B6 /* ShellScript */ = {
+		4DAA1206207C85930087B0B6 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveObjC.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,11 +341,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D51D475207F3A3500D3C28B /* NetTestViewController.m in Sources */,
 				4DAA1213207C86970087B0B6 /* HUMTool.m in Sources */,
 				4DAA120F207C865F0087B0B6 /* RACBaseTestViewController.m in Sources */,
 				4DAA11E0207C842D0087B0B6 /* main.m in Sources */,
 				4DAA1209207C86040087B0B6 /* RootViewController.m in Sources */,
 				4DAA120C207C860F0087B0B6 /* MainViewController.m in Sources */,
+				4DAA1219207C8FDD0087B0B6 /* RACSubjectToDelegateViewController.m in Sources */,
 				4DAA11D2207C842C0087B0B6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
